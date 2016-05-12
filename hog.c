@@ -43,11 +43,12 @@ int main(int argc, char* argv[]){
 	
 	if ( ((dom == 1)) 
 	&& ( ((rodzice == 1) && (((ang == 0) && (zw > 0)) || ((weze == 0) && (bank == 0)))) 
-	|| ((rodzice == 0) && (zw == 1) && (bank == 1) && (weze == 1) && (ang == 1)) ) ) printf("1");
+	|| ((rodzice == 0) && (zw == 1) && (bank == 1) && (weze == 1) && (ang == 1)) ) ) {
+	printf("1");
+	return 1;
+	}
 	else printf("0");
-
-
-return 0;
+	return 0;
 }
 
 void blad(){
