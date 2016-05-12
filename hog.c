@@ -39,15 +39,15 @@ int main(int argc, char* argv[]){
 	if (strcmp(argv[5], "t") || strcmp(argv[5], "T")) weze = 1;
 	else weze = 0;*/
 	
-	printf ("%d %d %d %d %d %d\n", dom, rodzice, bank, ang, weze, zw);
+	//printf ("%d %d %d %d %d %d\n", dom, rodzice, bank, ang, weze, zw);
 	
 	if ( ((dom == 1)) 
 	&& ( ((rodzice == 1) && (((ang == 1) && (zw > 0)) || ((weze == 0) && (bank == 0)))) 
 	|| ((rodzice == 0) && (zw == 1) && (bank == 1) && (weze == 1) && (ang == 1)) ) ) {
-	printf("1");
+	//printf("Dostaniesz sie\n");
 	return 1;
 	}
-	else printf("0");
+	else //printf("Nie dostaniesz sie\n");
 	return 0;
 }
 
